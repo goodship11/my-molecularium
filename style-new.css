@@ -107,7 +107,11 @@ p {
 
 
 .app-image {
+	max-width: 500px;
+}
 
+.app-image img {
+	width: 100%;
 }
 .app-about {
 	padding: 10px;
