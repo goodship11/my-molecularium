@@ -196,7 +196,12 @@ p.copyright {
 .sponsors {
 	margin: 2em auto;
 }
-.sponsors
+.sponsor-images {
+
+}
+
+.sponsor-images a:first-child img
+	{ margin-left: 2em;}
 
 .divider {
 	margin: 1em ;
