@@ -1,0 +1,153 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font: 11px Helvetica, Arial, sans-serif;
+		/*background:#eaf1f1;*/
+	/*background:#65ACF0;*/
+	background: url("images/app/hex-pattern@0,25x-50.png") -50px -25px #65ACF0;;
+	line-height: 1.25;
+	/*overflow:hidden;
+	height:100%;*/
+}
+
+div {
+	max-width: 500px;
+	margin: 0 auto;
+}
+div.main{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	width:100%;
+	height: 100%;
+	background: no-repeat url("images/app/gradient-white@0.5x.png") top -560px right 75%;
+
+/*background:url("images/app/hex pattern@0,25x-50.png");*/
+}
+div.stars {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	width:100%;
+	height: 100%;
+	background: no-repeat url("images/app/app_starburst.png") top -1202px left
+}
+
+
+h1 {
+	font-family: "oxygen";
+	font-size: 20px;
+	font-weight: 800;
+	margin: 4px 0 2px 20px;
+}
+h2 {
+	margin: 6px 0 10px;
+	font-family: "dosis";
+	font-weight: 600;
+	font-size: 36px;
+	font-style: italic;
+}
+
+
+p {
+	font-family: "oxygen";
+	font-size: 16px;
+	line-height: 22px;
+	padding: 0 5px;
+}
+
+
+.app-image {
+
+}
+.app-about {
+	padding: 10px;
+	max-width: 500px;
+}
+
+.app-stores {
+	padding: 10px;
+	margin: 0 auto;
+}
+.app-stores a {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+		display: inline;
+	}
+.app-stores img {
+		margin: 5px 10px;
+	}
+
+
+.app-screenshots {
+	padding: 10px;
+}
+
+
+
+
+.app-screenshots img {
+	display: inline-block;
+	width: 100px;
+	margin: 5px;
+
+}
+
+
+.sponsors {
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+hr { margin: 5px auto;}
