@@ -96,9 +96,13 @@ div.stars {
 	max-width: 100%;
 	width:100%;
 	height: 100%;
-	background: no-repeat url("images/app/app_starburst.png") top -1142px right 60%;
+	/*background: no-repeat url("images/app/app_starburst.png") top -1142px right 60%;*/
 }
 
+div#burst {
+	position: absolute;
+
+}
 
 h1 {
 	font-family: "oxygen";
@@ -158,6 +162,8 @@ a:hover, a:active {
 }
 .sponsors,  .app-about, .app-image, .app-screenshots, .app-stores, .legalese {
 	max-width: 600px;
+	position: relative;
+	z-index: 100
 }
 
 
