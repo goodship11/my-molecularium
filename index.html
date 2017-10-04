@@ -9,6 +9,7 @@
 <title>My Molecularium - Get the App for your mobile device!</title>
 <link href='http://fonts.googleapis.com/css?family=Oxygen:300,700|Dosis:400,700' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/lightbox.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <script type="text/javascript">
@@ -21,6 +22,12 @@
    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
  })();
 </script>
+
+<!-- BEGIN VIDEO JS STUFF -->
+<link href="http://vjs.zencdn.net/6.2.7/video-js.css" rel="stylesheet">
+<!-- If you'd like to support IE8 -->
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<!-- END VIDEO JS STUFF -->
 
 </head>
 
@@ -38,14 +45,25 @@
       <div class="app-about">
         <!-- <h1>The Molecule Building Game!</h1> -->
         <br />
-        <iframe width="500" height="281.25" src="https://www.youtube.com/embed/PttGha8QFzA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen style="    margin: 0 auto;
+        <!-- <iframe width="500" height="281.25" src="https://www.youtube.com/embed/PttGha8QFzA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen style="    margin: 0 auto;
     display: block;
     border: 1px solid rgb(0, 0, 0);
-    box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.2);"></iframe>
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.2);"></iframe> -->
 
-        <p>My Molecularium is a fun and challenging molecule building game.</p>
-        <p>Launch atoms at target bond sites to assemble essential molecules of increasing complexity and difficulty.</p>
-        <p>Move your device to direct your shots using our innovative laser-guided aim.</p>
+
+    <video id="my-video" class="video-js" controls preload="auto" width="281" height="500"
+  poster="images/app/app_logo-full-with-tagline.png" data-setup="{}">
+    <source src="https://dl.dropboxusercontent.com/s/7h7vj12xxmwm5hf/MyMoleculariumPromo.mov?dl=0" type='video/mp4'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+
+        <p>My Molecularium is a fun and challenging molecule building game.
+          Launch atoms at target bond sites to assemble essential molecules of increasing complexity and difficulty.
+          Move your device to direct your shots using our innovative laser-guided aim.</p>
         <p>Enjoy learning about molecules effortlessly as you play.</p>
         <span class="app-download">
           <p >
@@ -114,6 +132,7 @@
   </div>
 </div>
 
+<script src="http://vjs.zencdn.net/6.2.7/video.js"></script>
 
   </body>
  </html>
