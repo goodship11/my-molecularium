@@ -118,7 +118,7 @@ h2 {
 }
 
 
-p {
+p, .legalese a {
 	font-family: Arial, sans-serif;
 	font-size: 1.4em;
 	line-height: 1.5em;
@@ -139,12 +139,22 @@ span.app-download p {
 	/*width: 100%;*/
 }
 
-p.copyright {
+p.copyright, .legalese a {
 	text-align: center;
 	font-size: 1em;
+	margin: 0 auto;
 }
-
-.sponsors,  .app-about, .app-image, .app-screenshots, .app-stores {
+.legalese div {
+	margin: 0 auto .2em;
+	text-align: center;
+}
+a:link, a:visited {
+	color: #fff;
+}
+a:hover, a:active {
+	color: #DEDCEC;
+}
+.sponsors,  .app-about, .app-image, .app-screenshots, .app-stores, .legalese {
 	max-width: 600px;
 }
 
@@ -157,12 +167,12 @@ p.copyright {
 	margin-top: 2.5em;
 }
 .app-about {
-	z-index: 100
+	z-index: 100;
 	padding: 0 10px;
 }
 
 .app-stores {
-	z-index: 100
+	z-index: 100;
 	padding: 10px;
 	margin: 0 auto;
 	width: 100%;
@@ -181,7 +191,7 @@ p.copyright {
 
 
 .app-screenshots {
-	z-index: 100
+	z-index: 100;
 	padding: 0;
 	margin: .5em auto 0;
 	text-align: center;
@@ -199,19 +209,96 @@ p.copyright {
 
 
 .sponsors {
-	z-index: 100
+	z-index: 100;
 	margin: 2em auto;
 }
-.sponsor-images {
 
+.sponsor-images {
+	text-align: center;
+	height: 50px;
 }
 
-.sponsor-images a:first-child img
-	{ margin-left: 2em;}
+.sponsor-images a {
+	/*width: 25%;*/
+	/*margin: 0 2%;*/
+}
+
+.sponsor-images a img {
+	display: inline;
+	/*width: 100%;*/
+	margin: 5px 2%;
+}
+
+.sponsor-wide {
+	width: 33%;
+	display: inline;
+}
+.sponsor-wide a img {
+	padding: 1% 0;
+}
+.sponsor-short {
+	width: 20%;
+	display: inline;
+}
+
+.sponsor-images a:first-child img {
+		/*margin-left: 2em;*/
+	}
+
+
 
 .divider {
 	margin: 1em ;
 	height: 0;
 	border-top: 1px dotted #8c8b8b;
 	border-bottom: 1px dotted #fff;
+}
+
+
+
+/*Spinning burst experiment*/
+
+
+/* keyframes for animation;  simple 0 to 360 */
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/* basic structure for the rays setup */
+#raysDemoHolder	{
+	position: relative;
+	width: 490px;
+	height: 490px;
+	margin: 100px 0 0 200px;
+}
+#raysLogo {
+	width: 300px;
+	height: 233px;
+	text-indent: -3000px;
+	background: url(logo.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+#rays	{ /* with animation properties */
+	background: url(rays.png) 0 0 no-repeat;
+	position: absolute;
+	top: -100px;
+	left: -100px;
+	width: 490px;
+	height: 490px;
+
+	/* microsoft ie */
+	animation-name: spin;
+	animation-duration: 40000ms; /* 40 seconds */
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#rays:hover {
+	/* animation-duration: 10000ms; 10 seconds - speed it up on hover! */
+	/* resets the position though!  sucks */
 }
