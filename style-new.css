@@ -86,7 +86,7 @@ div.main{
 	width:100%;
 	height: 100%;
 	/*background: no-repeat url("images/app/gradient-white@0.5x.png") top -560px left 250px;*/
-	overflow: -webkit-paged-y;
+	overflow-x: hidden;
 
 /*background:url("images/app/hex pattern@0,25x-50.png");*/
 }
