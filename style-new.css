@@ -143,6 +143,7 @@ p.copyright, .legalese a {
 	text-align: center;
 	font-size: 1em;
 	margin: 0 auto;
+	padding: .4em 1em;
 }
 .legalese div {
 	margin: 0 auto .2em;
@@ -221,6 +222,7 @@ a:hover, a:active {
 .sponsor-images a {
 	/*width: 25%;*/
 	/*margin: 0 2%;*/
+	text-decoration: none;
 }
 
 .sponsor-images a img {
