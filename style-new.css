@@ -90,12 +90,13 @@ div.main{
 /*background:url("images/app/hex pattern@0,25x-50.png");*/
 }
 div.stars {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	max-width: 100%;
 	width:100%;
 	height: 100%;
-	background: no-repeat url("images/app/app_starburst.png") top -1142px right 60%;
+	/*background: no-repeat url("images/app/app_starburst.png") top -1142px right 60%;*/
 }
 
 
@@ -286,21 +287,18 @@ a:hover, a:active {
 	z-index: 2;
 }
 #rays	{ /* with animation properties */
-	background: url(rays.png) 0 0 no-repeat;
+	background: url(images/app/app_stargrad.png) 0 0 no-repeat;
 	position: absolute;
-	top: -100px;
-	left: -100px;
-	width: 490px;
-	height: 490px;
+	top: -1140px;
+	left: -340px;
+	width: 2500px;
+	height: 2500px;
+	z-index: -1;
 
 	/* microsoft ie */
 	animation-name: spin;
 	animation-duration: 40000ms; /* 40 seconds */
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-}
-
-#rays:hover {
-	/* animation-duration: 10000ms; 10 seconds - speed it up on hover! */
-	/* resets the position though!  sucks */
+	clip-path: circle(1500px at center);
 }
