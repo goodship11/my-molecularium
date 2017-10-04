@@ -120,21 +120,23 @@ h2 {
 
 p {
 	font-family: Arial, sans-serif;
-	font-size: 1.9em;
-	line-height: 1.4em;
-	padding: 0 0.5em;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	padding: 0 2em;
 	text-align: left;
 	color: white;
 	font-weight: normal;
 	text-shadow: 1px 1px 2px rgba(0,0,0, 0.4), 0px -1px 3px rgba(0,0,0, 0.2) ;
-	letter-spacing: 0.5pt;
+	letter-spacing: 0.3pt;
+	margin: 1em 3em;
 }
 
 span.app-download p {
 	text-align: center;
 	font-weight: 800;
-	font-size: 2.2em;
-	margin: 1.5em auto 0;
+	font-size: 1.8em;
+	margin: 1.5em auto .5em;
+	/*width: 100%;*/
 }
 
 p.copyright {
@@ -142,7 +144,7 @@ p.copyright {
 	font-size: 1em;
 }
 
-.sponsors,  .app-about, .app-image, .app-screenshots {
+.sponsors,  .app-about, .app-image, .app-screenshots, .app-stores {
 	max-width: 600px;
 }
 
@@ -152,13 +154,15 @@ p.copyright {
 
 .app-image img {
 	width: 100%;
-	margin-top: 4em;
+	margin-top: 2.5em;
 }
 .app-about {
+	z-index: 100
 	padding: 0 10px;
 }
 
 .app-stores {
+	z-index: 100
 	padding: 10px;
 	margin: 0 auto;
 	width: 100%;
@@ -177,8 +181,9 @@ p.copyright {
 
 
 .app-screenshots {
+	z-index: 100
 	padding: 0;
-	margin: 0 auto;
+	margin: .5em auto 0;
 	text-align: center;
 }
 
@@ -194,6 +199,7 @@ p.copyright {
 
 
 .sponsors {
+	z-index: 100
 	margin: 2em auto;
 }
 .sponsor-images {
