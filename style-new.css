@@ -85,7 +85,7 @@ div.main{
 	max-width: 100%;
 	width:100%;
 	height: 100%;
-	background: no-repeat url("images/app/gradient-white@0.5x.png") top -560px right 75%;
+	/*background: no-repeat url("images/app/gradient-white@0.5x.png") top -560px right 75%;*/
 
 /*background:url("images/app/hex pattern@0,25x-50.png");*/
 }
@@ -297,9 +297,9 @@ a:hover, a:active {
 
 	/* microsoft ie */
 	animation-name: spin;
-	animation-duration: 40000ms; /* 40 seconds */
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	clip-path: circle(1000px at center);
-	-webkit-mask-image: radial-gradient(2000px at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%)
+	animation-duration: 20000ms; /* 40 seconds */
+	animation-iteration-count: 3;
+	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	/*clip-path: circle(1000px at center);*/
+	-webkit-mask-image: radial-gradient(2000px at center, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 4%, rgba(0, 0, 0, 0) 80%)
 }
