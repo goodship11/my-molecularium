@@ -375,30 +375,7 @@ a:hover, a:active {
   height: 270%;
 }
 
-/*@media (min-width: 400px) {
-	.app-image img.bursting {
-		top: -253px;
-	  right: -418px;
-	  width: 270%;
-	  height: 270%;
-	}
-}
-@media (min-width: 450px) {
-	.app-image img.bursting {
-		top: -253px;
-	  right: -418px;
-	  width: 270%;
-	  height: 270%;
-	}
-}
-@media (min-width: 500px) {
-	.app-image img.bursting {
-		top: -253px;
-	  right: -418px;
-	  width: 270%;
-	  height: 270%;
-	}
-}
+
 @media (min-width: 550px) {
 	.app-image img.bursting {
 		top: -253px;
@@ -420,7 +397,15 @@ a:hover, a:active {
 
 img#starback {
 	/*z-index: 5;*/
-	-webkit-mask-image: radial-gradient(710px at center, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 4%, rgba(0, 0, 0, 0) 80%)
+	-webkit-mask-image: radial-gradient(710px at center, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 4%, rgba(0, 0, 0, 0) 80%);
+	}
+
+#starback {
+	animation-name: spin;
+	animation-duration: 7000ms; /* 40 seconds */
+	animation-iteration-count: 1;
+	/*animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);*/
+	animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 }
 
