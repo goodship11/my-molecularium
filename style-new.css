@@ -359,57 +359,57 @@ a:hover, a:active {
 
 	/* microsoft ie */
 	animation-name: spin;
-	animation-duration: 20000ms; /* 40 seconds */
+	animation-duration: 45000ms; /* 40 seconds */
 	animation-iteration-count: 3;
 	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 	/*clip-path: circle(1000px at center);*/
-	-webkit-mask-image: radial-gradient(2000px at center, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 4%, rgba(0, 0, 0, 0) 80%)
+	-webkit-mask-image: radial-gradient(1490px at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0,0.8) 69%, rgba(0, 0, 0, 0) 80%)
 }
 
 .app-image img.bursting {
 	position: absolute;
 	z-index: -1;
-  top: -111%;
-  right: -116%;
-  width: 270%;
-  height: 270%;
+  top: -220%;
+  right: -131%;
+  width: 300%;
+  height: 478%;
 }
 
 
-@media (min-width: 550px) {
+/*@media (min-width: 550px) {
 	.app-image img.bursting {
 		top: -253px;
 	  right: -418px;
 	  width: 270%;
 	  height: 270%;
 	}
-}
+}*/
 @media (min-width: 600px) {
 	.app-image img.bursting {
-	  top: -1162px;
-	  right: -1140px;
-	  width: 2500px;
-	  height: 2500px;
+	  top: -1125px;
+	  right: -1094px;
+	  width: 2400px;
+	  height: 2400px;
 	}
-}*/
+}
 
 
 
 img#starback {
 	/*z-index: 5;*/
-	-webkit-mask-image: radial-gradient(700px at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0,0.5) 40%, rgba(0, 0, 0, 0) 80%);
+	-webkit-mask-image: radial-gradient(1500px at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0,0.5) 50%, rgba(0, 0, 0, 0) 60%);
 	}
 
 #starback {
 	animation-name: spin;
-	animation-duration: 20000ms; /* 40 seconds */
+	animation-duration: 30000ms; /* 40 seconds */
 	animation-iteration-count: infinite;
 	/*animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);*/
 	animation-timing-function: linear;
 
 }
 
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {
 	.app-image img.bursting {
 	  top: -1162px;
 	  right: -1140px;
@@ -418,9 +418,9 @@ img#starback {
 	}
 	img#starback {
 		/*z-index: 5;*/
-		-webkit-mask-image: radial-gradient(2000px at center, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 4%, rgba(0, 0, 0, 0) 80%)
+		-webkit-mask-image: radial-gradient(2000px at center, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%)
 	}
-}
+}*/
 
 img#gradback {
 
