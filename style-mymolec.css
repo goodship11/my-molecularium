@@ -68,7 +68,7 @@ p {
 
 body {
 		font: 11px Helvetica, Arial, sans-serif;
-	background: url("images/app/hex-pattern@0,25x-50.png") -50px -25px #65ACF0;;
+	background: url("images/hex-pattern@0,25x-50.png") -50px -25px #65ACF0;;
 	line-height: 1.25;
 }
 
@@ -298,41 +298,7 @@ a:hover, a:active {
 	to { transform: rotate(360deg); }
 }
 
-/* basic structure for the rays setup */
-#raysDemoHolder	{
-	position: relative;
-	width: 490px;
-	height: 490px;
-	margin: 100px 0 0 200px;
-}
-#raysLogo {
-	width: 300px;
-	height: 233px;
-	text-indent: -3000px;
-	background: url(logo.png) 0 0 no-repeat;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-}
-#rays	{ /* with animation properties */
-	background: url(images/app/app_stargrad.png) 0 0 no-repeat;
-	position: absolute;
-	top: -1130px;
-	left: -350px;
-	width: 2500px;
-	height: 2500px;
-	z-index: -1;
 
-	/* microsoft ie */
-	animation-name: spin;
-	animation-duration: 45000ms; /* 40 seconds */
-	animation-iteration-count: 3;
-	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-	/*clip-path: circle(1000px at center);*/
-	-webkit-mask-image: radial-gradient(1490px at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0,0.8) 69%, rgba(0, 0, 0, 0) 80%)
-}
 
 .app-image img.bursting {
 	position: absolute;
