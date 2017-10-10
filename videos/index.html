@@ -1,8 +1,19 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
+  <!-- BEGIN VIDEO JS STUFF -->
+  <link href="http://vjs.zencdn.net/6.2.7/video-js.css" rel="stylesheet">
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <!-- END VIDEO JS STUFF -->
+
+<style>.video-js {
+	border: 1px solid black;
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.2);
+}</style>
 </head>
 <body>
+
   <a href="1.mp4">1-MyMoleculariumPreview-h264-15fps-22rf-constant copy.mp4</a><br>
   <a href="2.mp4">2-MyMoleculariumPreview-h264-30fps-14rf-constant copy.mp4</a><br>
   <a href="3.mp4">3-MyMoleculariumPreview-h264-30fps-avg3000kbps copy.mp4</a><br>
@@ -10,5 +21,42 @@
   <a href="5.mp4">5-MyMoleculariumPreview copy.mp4</a><br>
   <a href="6.mp4">6-MyMoleculariumPromo-h264-30fps-0rf-con-500x888.mp4</a><br>
   <a href="7.mov">7-MyMoleculariumPromo.mov</a><br>
+
+
+  <video id="my-video1" class="video-js" controls preload="auto" width="281" height="500"
+  poster="../images/vertical-logo_500px-8bit.jpg" data-setup="{}" align="center" style="text-align: center; margin: 0 auto;">
+  <source src="1.mp4" type="video/mp4">
+  </video>
+
+  <video id="my-video2" class="video-js" controls preload="auto" width="281" height="500"
+  poster="../images/vertical-logo_500px-8bit.jpg" data-setup="{}" align="center" style="text-align: center; margin: 0 auto;">
+  <source src="2.mp4" type="video/mp4">
+  </video>
+
+  <video id="my-video3" class="video-js" controls preload="auto" width="281" height="500"
+  poster="../images/vertical-logo_500px-8bit.jpg" data-setup="{}" align="center" style="text-align: center; margin: 0 auto;">
+  <source src="3.mp4" type="video/mp4">
+  </video>
+
+  <video id="my-video4" class="video-js" controls preload="auto" width="281" height="500"
+  poster="../images/vertical-logo_500px-8bit.jpg" data-setup="{}" align="center" style="text-align: center; margin: 0 auto;">
+  <source src="4.mp4" type="video/mp4">
+  </video>
+
+  <video id="my-video5" class="video-js" controls preload="auto" width="281" height="500"
+  poster="../images/vertical-logo_500px-8bit.jpg" data-setup="{}" align="center" style="text-align: center; margin: 0 auto;">
+  <source src="5.mp4" type="video/mp4">
+  </video>
+
+  <video id="my-video6" class="video-js" controls preload="auto" width="281" height="500"
+  poster="../images/vertical-logo_500px-8bit.jpg" data-setup="{}" align="center" style="text-align: center; margin: 0 auto;">
+  <source src="6.mp4" type="video/mp4">
+  </video>
+
+  <video id="my-video7" class="video-js" controls preload="auto" width="281" height="500"
+  poster="../images/vertical-logo_500px-8bit.jpg" data-setup="{}" align="center" style="text-align: center; margin: 0 auto;">
+  <source src="7.mov" type="video/mov">
+  </video>
+
 </body>
 </html>
