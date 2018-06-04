@@ -67,7 +67,7 @@ p {
 
 
 body {
-		font: 11px Helvetica, Arial, sans-serif;
+	font: 11px Helvetica, Arial, sans-serif;
 	background: url("images/hex-pattern@0,25x-50.png") -50px -25px #65ACF0;;
 	line-height: 1.25;
 }
@@ -128,7 +128,7 @@ p, .legalese a {
 	margin: 1em 1em;
 
 	color: rgb(0, 54, 102);
-  text-shadow: 1px 1px 1px rgba(0,0,0, 0.2);
+  	text-shadow: 1px 1px 1px rgba(0,0,0, 0.2);
 }
 
 @media (min-width: 400px) {
